@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="survey.css">
+    <script defer src="survey.js"></script>
+  </head>
+  <body>
+  <header>
+  <div id="title"><h1>Valorant Survey Form</h1>
+    </header>
+
+<form id="survey-form">
+
+  <div id="description"> Let us know how we can improve our service</div><br>
+
+  <fieldset class="fieldset">
+
+    <div class="sub-group">
+      <label class="left" id="name-label" for="name">*Name:</label>
+    <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your name">
+    </div>
+
+    <div class="sub-group">
+     <label class="left" id="email-label" for="email">*Email:</label>
+    <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email">
+    </div>
+
+    <div class="sub-group">
+      <label  class="left" id="number-label" for="number">*Age:</label>
+    <input type="number" name="age" placeholder="age" class="right input-field" id="age">
+  </div>
+
+  <div class="sub-group">
+    <label class="left" id="phonenumber" for="number">*Phone Number</label>
+    <input type="number" name="number" placeholder="number" class="right input-field" id="number">
+  </div>
+
+    <div class="sub-group">
+      <label class="left" for="dropdown">*First time playing VALORANT?</label>
+
+      <select class="right dropdown" id="dropdown" name="dropdown">
+        <option selected disabled>Select an option</option>
+        <option value="first">Yes First-Timer</option>
+        <option value="never">No Played Before</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <fieldset class="fieldset">
+<div class="sub-group">
+<label class="left">
+  *Which FPS games have you played before?</label>
+
+ <ul style="list-style: none;" class="right">
+
+   <li class="checkbox"><label><input type="checkbox" name="game" value="Counter-Strike" >Counter-Strike</label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="Call of Duty">Call of Duty</label></li>
+        <li class="checkbox"><label><input type="checkbox" name="game" value="Metro Exodus" >Metro Exodus<label></li>
+      <li class="checkbox"><label><input type="checkbox" name="game" value="Halo" >Halo<label></li>
+     <li class="checkbox"><label><input type="checkbox" name="game" value="Half-Life" >Half-Life</label></li>
+       </ul></div></fieldset>
+
+    <fieldset class="fieldset">
+  <div class="sub-group">
+  <label class="left" id="left-radio">Will you recommend the game to your friends?</label>
+
+   <ul style="list-style: none" class="right">
+       <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+   </ul>
+  </div></fieldset>
+
+     <fieldset class="fieldset">
+   <h2>Any comments or suggestions?</h2>
+
+    <div class="commentbox">
+
+   <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
+
+
+  <button type="submit" name="submit" onclick="return IsEmpty()" value="submit">Submit</button>
+       </div></fieldset>
+</form>
+</div>
+  </body>
+</html>
